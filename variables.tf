@@ -1,6 +1,8 @@
 variable "sg_name" {}
 variable "sg_desc" {}
-variable "sg_vpcid" {}
+variable "sg_vpcid" {
+    description = "vpc id"
+}
 variable "sg_ingress_ports" {
     description = "ingress ports for inbound traffic"
 }
