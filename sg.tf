@@ -2,7 +2,10 @@ resource "aws_security_group" "example" {
   name        = var.sg_name
   description = var.sg_desc
   vpc_id      = var.sg_vpcid
-  tags        = var.sg_tags
+  #tags       = var.sg_tags
+  tags        = {
+    Name      = "SG-v1.0.5"
+  }
 
   dynamic "ingress" {
     for_each = toset(var.sg_ingress_ports)
