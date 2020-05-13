@@ -4,7 +4,7 @@ resource "aws_security_group" "example" {
   vpc_id      = var.sg_vpcid
   #tags       = var.sg_tags
   tags        = {
-    Name      = "SG-v1.0.5"
+    Name      = "SG-v1.0.6"
   }
 
   dynamic "ingress" {
